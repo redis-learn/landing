@@ -48,8 +48,8 @@ a.try-cloud-link:hover {
     color:#3f5e85;
 }
 
-input.searchbar {
-  background-image: url("/theme/images/magnifyingglass.svg");
+.searchbar {
+  background-image: url("../images/magnifyingglass.svg");
   background-size: 1.2em;
   background-repeat: no-repeat;
   background-position: 13px center;
