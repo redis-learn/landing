@@ -2,30 +2,23 @@
 <html class="has-navbar-fixed-top">
     <head>
         <meta charset="utf-8">
-        <link rel="shortcut icon" href="./theme/images/favicon-32x32.png" type="image/x-icon" />
+        <link rel="shortcut icon" href="./theme/images/redisicon.png" type="image/x-icon" />
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        
         <meta name="keywords" content="Redis, knowledge, documentation, issue, problem, how-to, instructions, tutorial">
-        <meta name="description" content="Welcome to the Redis Knowledge Base! In this portal, you will find troubleshooting articles, tutorials and more for all the Redis solutions and client libraries">
-        <title>Redis - Knowledge Base</title>
-        
-        <link rel="stylesheet" href="https://uicdn.toast.com/editor/latest/toastui-editor.min.css" />
+        <meta name="description" content="Welcome to the Redis Knowledge Center! In this portal, you will find a reference to the Redis documentation and educational assets.">
+        <title>Redis - Knowledge Center</title>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
         <link rel="stylesheet" href="./theme/css/bulma-divider.min.css" type="text/css" media="all">
-        <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.0/themes/smoothness/jquery-ui.css"></link>
         <link rel="stylesheet" href="./theme/css/style.css" type="text/css" media="all">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="apple-touch-icon" href="./theme/images/redisicon.png" />
         <link rel="apple-touch-icon-precomposed" href="./theme/images/redisicon.png" />
         <link rel="apple-touch-startup-image" href="./theme/images/redisicon.png">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-        <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js" ></script>
-        <script src="https://uicdn.toast.com/editor/latest/toastui-editor-all.min.js"></script>
     </head>
 
     <body>
         <section> <!--is-primary-->
-            <nav class="p-1 mb-2 navbar is-transparent is-fixed-top" role="navigation" aria-label="main navigation">
+            <nav class="p-1 navbar is-transparent is-fixed-top" role="navigation" aria-label="main navigation">
                 <div class="navbar-brand">
                     <a href="/" class="navbar-item">
                         <img alt="White Redis Logo" width="117px" height="40px" src="./theme/images/logo-redis-3.svg">
@@ -41,8 +34,6 @@
                     <div class="navbar-start" style="flex: 0 0 20%;">
                     </div>
 
-                    
-
                     <div class="navbar-end" style="flex: 0 0 30%;">
                         <a class="try-cloud-link" target="" href="https://redis.com/try-free/">
                             Try Redis Cloud
@@ -50,85 +41,137 @@
                     </div>
               </div>
             </nav>
+        </section>
 
-<div class="container pt-6" style="padding-left:20px; padding-right:20px;">
-               
-<div class="columns">
-    <div class="column"></div>
-    <div class="column is-three-fifths">
-    <form class="mt-6 mb-6" method="post" action="/public">
-    <div class="box p-2" style="border-radius: 9999px;">
-        <div class="field has-addons landing">
-            <div class="control has-icons-left has-icons-right is-expanded">
-                <input name="q" class="input searchbar is-rounded" type="text" placeholder="This search doesn't work yet ...">
+        <section class="search p-5">
+            <div class="pt-6 container">
+                <div class="columns">
+                    <div class="column">
+                        <h1 class="title is-1">Redis Learn</h1>
+                        <p class="subtitle">Expand your knowledge and learn new ways to resolve problems with Redis.</p>
+                        <form class="mt-6 pr-6" method="post" action="/public">
+                            <div class="field has-addons landing">
+                                <div class="control has-icons-left has-icons-right is-expanded">
+                                    <input name="q" class="input searchbar is-rounded" type="text" placeholder="This search doesn't work yet ...">
+                                </div>
+
+                                <p class="control is-hidden-mobile">
+                                    <span class="select">
+                                        <select name="cat" class="has-text-centered">
+                                              <option value="all">search the site</option>
+                                              <option  value="redis-u">learning by doing</option>
+                                              <option  value="redis-io">docs for developers</option>
+                                              <option  value="docs-redis-com">docs for operators</option>
+                                              <option  value="kb">get answers</option>
+                                        </select>
+                                    </span>
+                                </p>
+
+                                <div class="control">
+                                    <button type="submit" class="button is-link is-rounded">Search</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="column is-narrow is-hidden-touch">
+                        <div style="width: 500px;">
+                            <img src="./theme/images/world-learning.svg" style="width: 400px;">
+                        </div>
+                    </div>
+                </div>
             </div>
-            
-            <p class="control is-hidden-mobile">
-                <span class="select">
-                    <select name="cat" class="has-text-centered">
-                          <option value="all">all categories</option>
-                          <option  value="redis-u">learning by doing</option>  
-                          <option  value="redis-io">find docs for developers</option>
-                          <option  value="docs-redis-com">find docs for operators</option>
-                          <option  value="kb">get answers</option>
-                    </select>
-                </span>
-            </p>
-            
-            <div class="control">
-                <button type="submit" class="button is-link is-rounded">Search</button>
+        </section>
+
+        <section class="hero is-small mt-6 mb-4" >
+            <div class="hero-body has-text-centered">
+                <div class="container has-text-grey-darker is-size-4 has-text-weight-medium">
+                    Learn about Redis
+                </div>
             </div>
-        </div>
-    </div>
-</form>
+        </section>
 
-    </div>
-    <div class="column"></div>
-</div>
+        <section>
+            <div class="tile is-ancestor">
+                <div class="tile is-parent">
+                    <article class="tile is-child p-5">
+                        <a style="display:block;" class="is-size-6" href="https://university.redis.com/">
+                            <img src="./theme/images/university.svg">
+                            <p class="mt-5 subtitle has-text-weight-semibold has-text-black" style="display: block;">Learning by doing</p>
+                        </a>
+                        <p class="mt-2">Learn about Redis for free from the experts at Redis. Engaging courses covering data structures, streams, search, security & more.</p>
+                    </article>
+                    <article class="tile is-child p-5">
+                        <a style="display:block;" class="is-size-6" href="https://www.redis.io">
+                            <img src="./theme/images/single-book.svg">
+                            <p class="mt-5 subtitle has-text-weight-semibold has-text-black" style="display: block;">Find docs for developers</p>
+                        </a>
+                        <p class="mt-2">This is the documentation of the open source, in-memory data store used as a database, cache, streaming engine, and message broker. </p>
+                    </article>
+                    <article class="tile is-child p-5">
+                        <a style="display:block;" class="is-size-6" href="https://docs.redis.com">
+                            <img src="./theme/images/books.svg">
+                            <p class="mt-5 subtitle has-text-weight-semibold has-text-black" style="display: block;">Find docs for operators</p>
+                        </a>
+                        <p class="mt-2">Search the documentation of Redis Enterprise and Redis Cloud, the data platform that unlocks the full potential of Redis at enterprise scale.</p>
+                    </article>
+                    <article class="tile is-child p-5">
+                        <a style="display:block;" class="is-size-6" href="https://kb.staging.learn.redis.com">
+                            <img src="./theme/images/light.svg">
+                            <p class="mt-5 subtitle has-text-weight-semibold has-text-black" style="display: block;">Get answers</p>
+                        </a>
+                        <p class="mt-2">In the Redis Knowledge Base you will find dozens of articles to learn more about Redis or answer specific questions.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
 
-<section class="hero is-small">
-  <div class="hero-body has-text-centered">
-    <div class="container has-text-grey-darker is-size-4 has-text-weight-medium">
-        Learn about Redis
-    </div>
-  </div>
-</section>
+        <footer class="footer mt-6">
+            <div class="columns">
+                <div class="column is-one-fifth">
+                    <h6 class="has-text-white has-text-weight-bold">COMPANY</h6>
+                    <ul class="mt-4">
+                        <li class="mt-2"><a class="has-text-white" href="https://redis.com/company/">About Us</a></li>
+                        <li class="mt-2"><a class="has-text-white" href="https://redis.com/company/team/">Team</a></li>
+                        <li class="mt-2"><a class="has-text-white" class="has-text-white" href="https://redis.com/company/careers/">Careers</a></li>
+                        <li class="mt-2"><a class="has-text-white" href="https://redis.com/company/newsroom/">Newsroom</a></li>
+                        <li class="mt-2"><a class="has-text-white" href="https://redis.com/company/contact/">Contact Us</a></li>
+                        <li class="mt-2"><a class="has-text-white" href="https://redis.com/company/contact/support/">Support</a></li>
+                        <li class="mt-2"><a class="has-text-white" href="https://redis.com/company/compliance-and-privacy/">Compliance</a></li>
+                        <li class="mt-2"><a class="has-text-white" href="https://redis.com/legal/">Legal Notices</a></li>
+                    </ul>
+                </div>
+                <div class="column is-one-fifth">
+                    <h6 class="has-text-white has-text-weight-bold">RESOURCES</h6>
+                        <ul class="mt-4">
+                            <li class="mt-2"><a class="has-text-white" href="https://redis.com/blog/">Blog</a></li>
+                            <li class="mt-2"><a class="has-text-white" href="https://redis.com/events/upcoming/">Events</a></li>
+                            <li class="mt-2"><a class="has-text-white" href="https://redis.com/webinars/">Webinars</a></li>
+                            <li class="mt-2"><a class="has-text-white" href="https://redis.com/whitepapers/">Whitepapers</a></li>
+                            <li class="mt-2"><a class="has-text-white" href="https://redis.com/datasheets/">Datasheets</a></li>
+                            <li class="mt-2"><a class="has-text-white" href="https://redis.com/tech-videos/">Tech Videos</a></li>
+                            <li class="mt-2"><a class="has-text-white" href="https://redis.com/tech-talks/">Tech Talks</a></li>
+                        </ul>
+                </div>
+                <div class="column is-one-fifth">
+                    <h6 class="has-text-white has-text-weight-bold">PARTNERS</h6>
+                    <ul class="mt-4">
+                        <li class="mt-2"><a class="has-text-white href="https://redis.com/partners/">Partner Center</a></li>
+                        <li class="mt-2"><a class="has-text-white href="https://redis.com/partners/find-a-partner/">Find a Partner</a></li>
+                    </ul>
 
-<div class="pt-6 container" style="max-width: 600px;">
-    <div class="tile is-ancestor">
-      <div class="tile is-parent is-vertical">
-        <article class="tile is-child">
-            <a style="display:block;justify-content: center;align-items:center;" class="has-text-centered is-size-8" href="https://university.redis.com/">
-                <img src="./theme/images/university.png">
-                <span class="has-text-black" style="display: block;">Learning by doing</span>
-            </a>
-        </article>
-        <article class="tile is-child">
-          <a style="display:block;" class="has-text-centered is-size-6" href="https://www.redis.io">
-                <img src="./theme/images/redis-io.png">
-                <span class="has-text-black" style="display: block;">Find docs for developers</span>
-          </a>
-        </article>
-      </div>
-      <div class="tile is-parent is-vertical">
-        <article class="tile is-child">
-            <a style="display:block;" class="has-text-centered is-size-6" href="https://docs.redis.com">
-              <img src="./theme/images/docs-redis-com.png">
-              <span class="has-text-black" style="display: block;">Find docs for operators</span>
-            </a>
-          </article>
-          <article class="tile is-child">
-            <a style="display:block;" class="has-text-centered is-size-6" href="https://kb.staging.learn.redis.com">
-              <img src="./theme/images/kb.png">
-              <span class="has-text-black" style="display: block;">Get answers</span>
-            </a>
-        </article>
-      </div>
-    </div>
-</div>
+                    <h6 class="mt-5 has-text-white has-text-weight-bold">CUSTOMERS</h6>
+                    <ul class="mt-4">
+                        <li class="mt-2"><a class="has-text-white href="https://redis.com/customer-stories/">Customer Stories</a></li>
+                        <li class="mt-2"><a class="has-text-white href="https://redis.com/case-studies/">Case Studies</a></li>
+                    </ul>
+                </div>
+                <div class="column is-half">
 
-</div>
-</section>
 
+
+
+                </div>
+            </div>
+        </footer>
     </body>
 </html>

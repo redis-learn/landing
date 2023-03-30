@@ -3,16 +3,24 @@
 .box{border-radius: 8px;box-shadow: rgba(0, 0, 0, 0.06) 0px 0px 1.6rem;}
 
 html, th, td{
+
+}
+
+.liner{
+    border-bottom: 1px solid #CCC;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+section.search{
     background-color: #f8f9f9;
 }
 
 .tile{
-    background-color: #f8f9f9;
 }
 
 .tile img{
-    background-color: #f8f9f9;
-    height:120px;
+    width:90%;
 }
 
 a.try-cloud-link{
@@ -40,18 +48,11 @@ a.try-cloud-link:hover {
     color:#3f5e85;
 }
 
-input.searchbar {
-  background-image: url("/theme/images/magnifyingglass.svg");
+.searchbar {
+  background-image: url("../images/magnifyingglass.svg");
   background-size: 1.2em;
   background-repeat: no-repeat;
   background-position: 13px center;
-}
-
-input.smallsearchbar {
-  background-image: url("/theme/images/magnifyingglass.svg");
-  background-size: 1.2em;
-  background-repeat: no-repeat;
-  background-position: 8px center;
 }
 
 section .navbar-brand img {
@@ -70,22 +71,8 @@ section .navbar-brand img {
   margin: 0 0rem 0 2rem;
 }
 
-.liner{
-    border-bottom: 1px solid #AAA;
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-
 .footer {
-  background-color: #f8f9f9;
-  padding-left:100px;
-  padding-right:100px;
-
-  bottom: 0;
-  left: 0;
-  position: fixed;
-  right: 0;
-  z-index: 30;
+  background-color: #3f4b5f;
 }
 
 section .navbar-item span{
@@ -97,9 +84,6 @@ font-weight: 700;
 font-size: 14px;
 }
 
-.columns{
-    margin-right:0px;
-}
 
 .pagination-link.is-current {
     background-color: #4b61c0;
@@ -110,10 +94,6 @@ font-size: 14px;
 .centeredbox {
     text-align: center;
     display: block;
-}
-
-.toastui-editor-contents{
-    font-size: 15px;
 }
 
 .ui-autocomplete {
