@@ -20,7 +20,7 @@ section.search{
 }
 
 .tile img{
-    height:180px;
+    width:100%;
 }
 
 a.try-cloud-link{
@@ -72,7 +72,7 @@ section .navbar-brand img {
 }
 
 .footer {
-  background-color: #f8f9f9;
+  background-color: #3f4b5f;
 }
 
 section .navbar-item span{
