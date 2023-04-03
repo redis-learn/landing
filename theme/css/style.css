@@ -2,6 +2,22 @@
 
 .box{border-radius: 8px;box-shadow: rgba(0, 0, 0, 0.06) 0px 0px 1.6rem;}
 
+.rpadding {
+  padding-right: 30px;
+}
+
+.centered {
+    display: block;
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 90%;
+}
+
+.lpadding {
+  padding-left: 7%;
+}
+
+
 html, th, td{
 
 }
@@ -20,7 +36,7 @@ section.search{
 }
 
 .tile img{
-    width:90%;
+    width: 90%;
 }
 
 a.try-cloud-link{
@@ -72,7 +88,8 @@ section .navbar-brand img {
 }
 
 .footer {
-  background-color: #3f4b5f;
+  background-color: #161f31;
+  color: #bfc2c4;
 }
 
 section .navbar-item span{
