@@ -32,10 +32,22 @@
 
                 <div id="navbarBasicExample" class="navbar-menu is-expanded">
                     <div class="navbar-start" style="flex: 0 0 20%;">
+                        <a href="https://university.redis.com/" class="navbar-item">
+                                <span style="padding:6px;">UNIVERSITY</span>
+                        </a>
+                        <a href="https://www.redis.io" class="navbar-item">
+                            <span style="padding:6px;">DEVELOPERS</span>
+                        </a>
+                        <a href="https://www.redis.com" class="navbar-item">
+                            <span style="padding:6px;">OPERATORS</span>
+                        </a>
+                        <a href="https://kb.staging.learn.redis.com/" class="navbar-item">
+                            <span style="padding:6px;">KNOWLEDGE BASE</span>
+                        </a>
                     </div>
 
                     <div class="navbar-end" style="flex: 0 0 30%;">
-                        <a class="try-cloud-link" target="" href="https://redis.com/try-free/">
+                        <a class="try-cloud-link is-hidden-touch" target="" href="https://redis.com/try-free/">
                             Try Redis Cloud
                         </a>
                     </div>
@@ -161,5 +173,17 @@
                 </div>
             </div>
         </footer>
+
+        <script>
+            $(document).ready(function() {
+            // Check for click events on the navbar burger icon
+            $(".navbar-burger").click(function() {
+
+                // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+                $(".navbar-burger").toggleClass("is-active");
+                $(".navbar-menu").toggleClass("is-active");
+            });
+            });
+        </script>
     </body>
 </html>
